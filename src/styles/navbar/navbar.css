@@ -1,0 +1,16 @@
+.navbar-con{
+    background-color: rgb(46, 46, 46);
+    color:white;
+}
+.navbar-link-con{
+    display:flex;
+}
+
+.nav-link{
+    cursor: pointer;
+}
+@media(max-width:800px){
+    .navbar-link-con{
+        display: none;
+    }
+}

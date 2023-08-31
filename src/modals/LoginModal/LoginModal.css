@@ -1,0 +1,195 @@
+
+
+
+.login-modal-con{
+    position: fixed;
+   
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    background: url('../../images/dock-bg.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    
+  }
+.login-modal{
+    border:1px solid black;
+    padding: 2rem 2rem 2rem 2rem;
+    min-width:400px;
+    background:rgba(0,0,0,.6);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    border-radius: 10px;
+}
+.login-modal-btn{
+    padding: 1rem 2rem;
+    background-color: #0d6efd;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-top:1rem;
+    font-size: 1.3em;
+    cursor: pointer;
+    border:1px solid black;
+}
+
+.login-modal-input{
+    margin-bottom:1rem;
+    border-radius: 5px;
+    padding:0 0;
+    border:1px solid black;
+}
+
+.login-modal-header{
+    font-size:1.7em;
+    margin-bottom:1rem;
+}
+.login-modal-close-con{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login-modal-text{
+    margin-bottom: .5rem;
+    font-size: 1.2em;
+}
+
+.login-modal-have-con{
+  margin-top:1rem;
+  display: flex;
+  justify-content: flex-end;
+  font-size:1.1em;
+  cursor: pointer;
+}
+
+
+.form-item{
+    
+  
+  position:relative;
+}
+#InputEmailLogin{
+  width:100%
+}
+#InputEmailRegister{
+  width:100%
+}
+
+
+#InputPasswordRegister{
+  width:100%
+}
+
+.form-input-modal{
+  background-color:#fff;
+  border: 1px solid #e7e8fa;
+  width:100%;
+  height: 2.3rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  outline:none;
+  padding: 0 0 0 0;
+}
+
+.form-input-modal[type="text"]{
+  padding-left: 1rem;
+}
+.form-input-modal[type="password"]{
+  padding-left: 1rem;
+}
+
+
+
+/*validation items */
+
+.valid-icon{
+  display:block;
+  position: absolute;
+  top: 0.3rem;
+  right: 1rem;
+  font-size: 1.3rem;
+  color: #28a745;
+}
+
+.valid-icon-pw{
+  display:block;
+  position: absolute;
+  top: 0.3rem;
+  right: 1rem;
+  font-size: 1.3rem;
+  color: #28a745;
+}
+
+
+.error-msg{
+  background: #e74c3d;
+  color:#fceae7;
+  padding: 1.5rem 1rem;
+  border-radius: 5px;
+  font-size:1.1rem;
+  margin-top:1rem;
+  margin-bottom:1rem;
+  text-align: left;
+  line-height:.5rem;
+  position:relative;
+}
+
+.error-msg::before{
+  position:absolute;
+  content: "";
+  width: 1rem;
+  height:1rem;
+  background-color:#e74c3d; 
+  right: 1.2rem;
+  top: -0.5rem;
+  transform: rotate(45deg);
+}
+
+/* START STATE - hide validation */
+
+.valid-icon{
+  opacity:0;
+  transition: opacity 0.4s linear;
+}
+
+.invalid-item{
+  height: 0;
+  overflow:hidden;
+  transition: height 0.4s linear;
+}
+
+/* VALID STATE - show valid icon */
+
+.form-input-modal.valid{
+  border-color:#28a745;
+}
+
+.form-input-modal.valid ~ .valid-icon{
+  opacity: 1;
+}
+
+/* INVALID STATE - show error item */
+
+.form-input-modal.invalid{
+  border-color:#e74c3d;
+}
+
+.form-input-modal.invalid ~ .invalid-item{
+  height:3.6rem;
+}
+
+@media(max-width:1000px) {
+  .error-msg{
+    font-size: .9em;
+  }
+}

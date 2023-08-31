@@ -1,0 +1,25 @@
+.banner-con{
+    background: #424446;
+}
+
+.banner-text-con{
+    color:white;
+    margin-top:3rem;
+}
+
+.company-text{
+    color:white;
+    font-weight: 700;
+    margin-right:.5rem;
+    font-size:1.1em;
+}
+.banner-info{
+    max-width:200px;
+}
+
+
+@media(max-width:800px){
+    .banner-text-con{
+        display: none;
+    }
+}

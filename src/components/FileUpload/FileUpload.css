@@ -1,0 +1,69 @@
+.file-upload-con{
+    background: #424446;
+   
+}
+
+input[type='file'] {
+    color: transparent;
+  }
+
+  .file-inputs {
+    height: 64px;
+    width: 250px;
+    overflow: hidden;
+    position: relative;
+    border:1px solid rgb(57, 57, 57);
+    cursor: pointer;
+    /*Using a background color, but you can use a background image to represent a button*/
+    background-color: #0d6efd;
+    border-radius: 10px;
+    font-size:20px;
+    color:white;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.file-inputs:hover{
+    background-color: white;
+    color: #0d6efd;
+}
+.file-inputs-input {
+    cursor: pointer;
+    height: 100%;
+    
+    position:absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    /*This makes the button huge. If you want a bigger button, increase the font size*/
+   
+    /*Opacity settings for all browsers*/
+    opacity: 0;
+    -moz-opacity: 0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0)
+}
+
+.file-input-icon{
+    margin-left:.5rem;
+    margin-right:.5rem;
+}
+.bold-text{
+    font-weight: bold;
+}
+
+.supported-files-con{
+    color:white;
+}
+
+.convert-text{
+    font-weight: 700;
+    font-size:1.1em;
+}
+
+.upload-btn-con{
+    margin-left:auto;
+}
+
+@media(max-width:800px){
+    .upload-btn-con{
+        margin-left:0;
+    }
+}

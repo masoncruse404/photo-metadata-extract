@@ -1,0 +1,56 @@
+.modal-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    background-color: rgba(0,0,0,0.7);
+    width:100%;
+    
+    
+  }
+  .download-modal-btn-text-con{
+    flex-direction: column;
+  }
+
+  .download-modal{
+    position: absolute;
+    padding:1.5rem 1.5rem;
+    background-color: white;
+    border-radius:10px;
+  }
+  .download-modal-btn-con{
+    height:150px;
+    width:150px;
+    background-color: #4BB543;
+    border-radius:10px;
+    color:white;
+    font-size: 1.5em;
+    border:1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+  .download-modal-btn-con:hover{
+    color:black;
+  }
+  .download-modal-con{
+    border-left:1px solid black;
+  }
+  @media(max-width:800px){
+    .download-modal-con{
+      border-top:1px solid black;
+      border-left:0px;
+      margin-bottom:2rem;
+    }
+    .download-modal-btn-con{
+      height:150px;
+      width:100%;
+      background-color: #4BB543;
+      border-radius:10px;
+      color:white;
+      font-size: 2.5em;
+      border:1px solid black;
+    }
+    
+  }
